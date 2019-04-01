@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:dist="http://schemas.android.com/apk/distribution"
+    package="com.zwl.arcore.sample">
+
+    <dist:module dist:instant="true" />
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <uses-feature
+        android:name="android.hardware.camera.ar"
+        android:required="false" />
+
+    <application
+        android:allowBackup="true"
+        android:fullBackupContent="@xml/backup_descriptor"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <!-- This tag indicates that this application requires ARCore. This results in the
+          application only being visible in the Google Play Store on devices that support
+          ARCore.
+        申明应用类型
+        optional:AR可选,表示即使没有AR功能的手机也可以运行这个应用,使用其他功能
+        required:AR必备,表示没有 AR 就无法使用的应用称为 AR 必备应用
+        -->
+        <meta-data
+            android:name="com.google.ar.core"
+            android:value="optional" />
+
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ui.CreateCubeActivity"
+            android:configChanges="orientation|screenSize" />
+        <activity
+            android:name=".ui.ScaleCubeActivity"
+            android:configChanges="orientation|screenSize"
+            android:launchMode="singleTop" />
+    </application>
+
+</manifest>
