@@ -7,4 +7,10 @@
     <string name="cube">Cube</string>
     <string name="cylinder">Cylinder</string>
     <string name="sphere">Sphere</string>
+    <string name="rotate_x">rotate X axis</string>
+    <string name="rotate_y">rotate Y axis</string>
+    <string name="rotate_z">rotate Z axis</string>
+    <string name="scale_x">scale X axis</string>
+    <string name="scale_y">scale Y axis</string>
+    <string name="scale_z">scale Z axis</string>
 </resources>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="tv1" type="id" />
+    <item name="tv2" type="id" />
+    <item name="tv3" type="id" />
+    <item name="seek1" type="id" />
+    <item name="seek2" type="id" />
+    <item name="seek3" type="id" />
+    <item name="play" type="id" />
+</resources>

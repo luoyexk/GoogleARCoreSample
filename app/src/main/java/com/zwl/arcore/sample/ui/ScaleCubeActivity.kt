@@ -72,6 +72,10 @@ class ScaleCubeActivity : AppCompatActivity() {
         seek1.setOnSeekBarChangeListener(listener)
         seek2.setOnSeekBarChangeListener(listener)
         seek3.setOnSeekBarChangeListener(listener)
+
+        tv1.text = getString(R.string.scale_x)
+        tv2.text = getString(R.string.scale_y)
+        tv3.text = getString(R.string.scale_z)
     }
 
     private fun createCube() {

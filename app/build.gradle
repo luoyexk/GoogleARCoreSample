@@ -6,7 +6,7 @@ android {
         config {
             keyAlias 'android'
             keyPassword 'android'
-            storeFile file('D:/Android/workplace/GoogleARCoreSample/keystore/SampleKey.jks')
+            storeFile file(rootDir.absolutePath + "/keystore/SampleKey.jks")
             storePassword 'android'
         }
     }
