@@ -20,10 +20,16 @@
             android:text="@string/title_create_cube"
             tools:ignore="OnClick" />
         <Button
-            android:id="@+id/updateCube"
+            android:id="@+id/scaleCube"
             style="@style/main_button"
             android:onClick="onClick"
             android:text="@string/title_scale_cube"
+            tools:ignore="OnClick" />
+        <Button
+            android:id="@+id/rotateCube"
+            style="@style/main_button"
+            android:onClick="onClick"
+            android:text="@string/title_rotate_cube"
             tools:ignore="OnClick" />
 
     </LinearLayout>

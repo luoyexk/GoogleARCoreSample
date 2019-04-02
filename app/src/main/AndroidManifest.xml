@@ -45,6 +45,10 @@
             android:name=".ui.ScaleCubeActivity"
             android:configChanges="orientation|screenSize"
             android:launchMode="singleTop" />
+        <activity
+            android:name=".ui.RotateCubeActivity"
+            android:configChanges="orientation|screenSize"
+            android:launchMode="singleTop" />
     </application>
 
 </manifest>

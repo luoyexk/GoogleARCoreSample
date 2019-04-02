@@ -5,6 +5,7 @@ import android.os.Bundle
 import android.view.View
 import androidx.appcompat.app.AppCompatActivity
 import com.zwl.arcore.sample.ui.CreateCubeActivity
+import com.zwl.arcore.sample.ui.RotateCubeActivity
 import com.zwl.arcore.sample.ui.ScaleCubeActivity
 import kotlinx.android.synthetic.main.activity_main.*
 
@@ -18,7 +19,8 @@ class MainActivity : PermissionActivity() {
     fun onClick(view: View) {
         when (view) {
             createCube -> start(this, CreateCubeActivity::class.java)
-            updateCube -> start(this, ScaleCubeActivity::class.java)
+            scaleCube -> start(this, ScaleCubeActivity::class.java)
+            rotateCube -> start(this, RotateCubeActivity::class.java)
         }
     }
 

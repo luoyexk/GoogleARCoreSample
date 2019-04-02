@@ -3,6 +3,7 @@
     <string name="action_settings">Settings</string>
     <string name="title_create_cube">Create Cube</string>
     <string name="title_scale_cube">Scale Cube</string>
+    <string name="title_rotate_cube">Rotate Cube</string>
     <string name="cube">Cube</string>
     <string name="cylinder">Cylinder</string>
     <string name="sphere">Sphere</string>
